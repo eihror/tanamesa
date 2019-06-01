@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.extensions.activity.PermissionsActivity"
+    >
+
+  <TextView
+      android:id="@+id/text_view_permissions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="Permissões"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <Button
+      android:id="@+id/button_permission_camera"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="30dp"
+      android:text="Camera"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_view_permissions"
+      />
+
+  <Button
+      android:id="@+id/button_permission_contact"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="10dp"
+      android:text="Contatos"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_permission_camera"
+      />
+
+  <Button
+      android:id="@+id/button_permission_sms"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="10dp"
+      android:text="SMS"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_permission_contact"
+      />
+
+  <Button
+      android:id="@+id/button_permission_location"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="10dp"
+      android:text="Localização"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_permission_sms"
+      />
+
+  <Button
+      android:id="@+id/button_permission_files"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="10dp"
+      android:text="Arquivos"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_permission_location"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
