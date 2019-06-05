@@ -3,16 +3,18 @@ package com.eihror.tanamesa.features.main.activity
 import android.os.Bundle
 import com.eihror.tanamesa.R
 import com.eihror.tanamesa.base.BaseActivity
-import com.eihror.tanamesa.features.animations.activity.GlideActivity
+import com.eihror.tanamesa.features.libraries.activity.GlideActivity
 import com.eihror.tanamesa.features.animations.activity.LottieActivity
-import com.eihror.tanamesa.features.animations.activity.UILActivity
+import com.eihror.tanamesa.features.libraries.activity.UILActivity
 import com.eihror.tanamesa.features.animations.activity.WLottieActivity
 import com.eihror.tanamesa.features.extensions.activity.CurrencyActivity
 import com.eihror.tanamesa.features.extensions.activity.PermissionsActivity
+import com.eihror.tanamesa.features.libraries.activity.SpinnerActivity
 import kotlinx.android.synthetic.main.activity_main.button_extensions
 import kotlinx.android.synthetic.main.activity_main.button_glide
 import kotlinx.android.synthetic.main.activity_main.button_lottie
 import kotlinx.android.synthetic.main.activity_main.button_permissions
+import kotlinx.android.synthetic.main.activity_main.button_spinner
 import kotlinx.android.synthetic.main.activity_main.button_uil
 import kotlinx.android.synthetic.main.activity_main.button_w_lottie
 
@@ -48,6 +50,10 @@ class MainActivity : BaseActivity() {
 
     button_glide.setOnClickListener {
       startActivity(GlideActivity.newIntent())
+    }
+
+    button_spinner.setOnClickListener {
+      startActivity(SpinnerActivity.newIntent())
     }
   }
 }

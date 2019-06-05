@@ -1,12 +1,10 @@
 package com.eihror.tanamesa.model
 
-class User {
-
-    var id: Int = 0
-    var name: String? = null
-
-    init {
-        this.id = 0
-        this.name = ""
+data class User(
+    var id : Int? = null,
+    var name : String? = null
+) {
+    override fun toString(): String {
+        return this.name.toString()
     }
 }

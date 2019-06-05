@@ -1,4 +1,4 @@
-package com.eihror.tanamesa.features.animations.activity
+package com.eihror.tanamesa.features.libraries.activity
 
 import android.content.Intent
 import android.os.Bundle

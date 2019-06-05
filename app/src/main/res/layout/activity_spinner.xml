@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input_edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      style="@style/CustomTextInputLayout"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Texto default"
+        style="@style/CustomTextInputEditText"
+        />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spinner_normal"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginEnd="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/input_edit_text"
+      />
+
+  <com.eihror.awesomespinner.AwesomeSpinner
+      android:id="@+id/spinner_custom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="20dp"
+      app:as_borderRadius="8dp"
+      app:as_borderStroke="1dp"
+      app:as_defaultColor="#BF5d5d5d"
+      app:as_errorColor="@android:color/holo_red_dark"
+      app:as_hintText="Select an user"
+      app:as_paddingBottom="14dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinner_normal"
+      app:as_paddingEnd="16dp"
+      app:as_paddingStart="16dp"
+      app:as_paddingTop="14dp"
+      app:as_textSize="14sp"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

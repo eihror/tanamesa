@@ -8,4 +8,43 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">#d5d5d5</item>
+        <item name="android:textColorHint">#d5d5d5</item>
+        <item name="android:colorActivatedHighlight">#d5d5d5</item>
+        <item name="colorControlNormal">#d5d5d5</item>
+        <item name="colorControlActivated">#d5d5d5</item>
+        <item name="colorControlHighlight">#d5d5d5</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">#d5d5d5</item>
+        <item name="errorTextAppearance">@style/ErrorMessageAppearance</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+    </style>
+
+    <style name="CustomTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingEnd">21dp</item>
+        <item name="android:textColorHint">#d5d5d5</item>
+        <item name="android:paddingStart">21dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ErrorMessageAppearance" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
 </resources>

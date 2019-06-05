@@ -1,9 +1,8 @@
-package com.eihror.tanamesa.features.animations.activity
+package com.eihror.tanamesa.features.libraries.activity
 
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.eihror.tanamesa.R
 import com.eihror.tanamesa.TNMApplication
 import com.eihror.tanamesa.base.BaseActivity
